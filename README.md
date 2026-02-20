@@ -15,7 +15,7 @@ Results from Optimized with Outliers Present:
 - LR: Train 80% of data score: 0.80028 || Test 20% of data score: 0.792135
 - LR Recall: 0.79710
 - LR Precision: 0.70513
-- LR Accuracy: 0.792135
+- LR Accuracy: 0.79213
 
 - SVC: Train 80% of data score: 0.83405 || Test 20% of data score: 0.81461
 - SVC Recall: 0.68116
@@ -28,7 +28,9 @@ Results from Optimized with Outliers Present:
 - RF Accuracy: 0.81461
 
 Model Selection: 
-- The Support Vector Classification model was selected as the final model. Logistic Regression had a higher recall, meaning it caught more true positives, but SVC achieved better overall performance with higher accuracy and precision, making it more balanced and reliable. Random Forest showed signs of overfitting, reducing its generalization to unseen data.
+- Comparing Logistic Regression and SVC, Logistic Regression achieved higher recall at 0.79710, meaning it caught more true positives, but its precision was lower at 0.70513 and overall accuracy was 0.79213. SVC had slightly lower recall at 0.6812 but higher precision at 0.81034 and better accuracy at 0.81461, making it more balanced in performance. Both models had small train-test gaps, indicating stable generalization.
+- Random Forest, on the other hand, overfitted the data with a large train-test gap: 0.92686 on training data versus 0.81461 on test data, showing a weak generalization.
+- Based on these results, SVC was chosen as the final model for its overall balance between precision, recall, and accuracy.
 
 Discussion Question
 - For this Titanic dataset, the main competition is between Logistic Regression and SVC. Considering that Logistic Regression has higher recall but SVC shows better overall accuracy and precision, which model would you have chosen and why?
