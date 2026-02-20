@@ -11,17 +11,19 @@ Method:
 - Observed how scaling, outlier removal, and tuning affect each model differently
 - Models used were Logistic Regression (LR), Random Forest Classifier (RF), and Support Vector Classification (SVC)
 
-Results from Optimized with Outliers Present:
+Logistic Regression Results:
 - LR: Train 80% of data score: 0.80028 || Test 20% of data score: 0.792135
 - LR Recall: 0.79710
 - LR Precision: 0.70513
 - LR Accuracy: 0.79213
 
+Support Vector Classification Results:
 - SVC: Train 80% of data score: 0.83405 || Test 20% of data score: 0.81461
 - SVC Recall: 0.68116
 - SVC Precision: 0.81034
 - SVC Accuracy: 0.81461
 
+Random Forest Classifier Results:
 - RF: Train 80% of data score: 0.92686 || Test 20% of data score: 0.81461
 - RF Recall: 0.78261
 - RF Precision: 0.75000
