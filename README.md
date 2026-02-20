@@ -4,7 +4,7 @@ Brief Overview:
 - Not Optimized but Scaled: Baseline models trained on scaled features to observe the effect of normalization.
 - Optimized with Outliers: Models tuned with hyperparameter optimization including all data, keeping outliers.
 - Optimized without Outliers: Models tuned after removing outliers, showing the impact of noise reduction on performance.
-- Only the “Optimized with Outliers” results would discussed to keep the analysis brief, since the final model was selected from this experiment.
+- Only the “Optimized with Outliers” results would be discussed to keep the analysis brief, since the final model was selected from this experiment.
 
 Method:
 - Studied correlation between inputs and output to validate feature relevance
