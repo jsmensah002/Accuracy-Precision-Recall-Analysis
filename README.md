@@ -13,23 +13,23 @@ Method:
 
 Logistic Regression Results:
 - LR: Train 80% of data score: 0.800 || Test 20% of data score: 0.792
-- LR Recall: 0.790
-- LR Precision: 0.780
+- LR Recall: 0.793
+- LR Precision: 0.783
 - LR Accuracy: 0.790
 
 Support Vector Classification Results:
 - SVC: Train 80% of data score: 0.834 || Test 20% of data score: 0.815
 - SVC Recall: 0.790
-- SVC Precision: 0.810
+- SVC Precision: 0.813
 - SVC Accuracy: 0.810
 
 Random Forest Classifier Results:
 - RF: Train 80% of data score: 0.927 || Test 20% of data score: 0.815
-- RF Recall: 0.810
-- RF Precision: 0.800
+- RF Recall: 0.809
+- RF Precision: 0.804
 - RF Accuracy: 0.810
 
 Model Selection: 
-- Comparing Logistic Regression and SVC, Logistic Regression both achieved the same recall at 0.790, meaning it caught more true positives, but Logistic Regression's precision and accuracy was lower as compared to SVC's. Both models had small train-test gaps, indicating stable generalization.
+- Comparing Logistic Regression and SVC, Logistic Regression achieved a slightly higher recall at 0.793 but had a lower precision and accuracy. Both models had small train-test gaps, indicating stable generalization.
 - Random Forest, on the other hand, overfitted the data with a large train-test gap: 0.927 on training data versus 0.815 on test data, showing a weak generalization.
 - Based on these results, SVC was chosen as the final model for its overall balance between precision, recall, accuracy, and train-test score gap.
